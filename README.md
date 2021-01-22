@@ -43,16 +43,19 @@ A website created with HTML/CSS and Javascript where a user can input a number a
 
 ## Technologies Used
 * HTML
-* CSS/Bootstrap
-* Javascript/jQuery
-* Coded in VSCode
+* CSS
+* Javascript
+
+### Libraries Used
+* Bootstrap
+* JQuery
 
 ## Support and contact details
 
-_Email no one with any questions, comments, or concerns._
+Contact mikkrieg@gmail.com
 
 ### License
 
-*{This software is licensed under the MIT license}*
+[MIT](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2021 **_{Michael Kriegel, Scott O'Neil}_**
+Copyright (c) 2021 **_Michael Kriegel_**
