@@ -21,7 +21,7 @@ A website created with HTML/CSS and Javascript where a user can input a number a
 <br/>
 **Test:** For numbers that include 1: replace all digits with "Beep!"
 <br/>
-**Expect: roboger(1).toEqual("0", "Beep!")**
+**Expect:** roboger(1).toEqual("0", "Beep!")
 
 **Describe:** roboger()
 <br/>

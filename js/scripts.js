@@ -2,31 +2,45 @@ $(document).ready(function(){
 
   // Business Logic
   const numberArray = [];
-  const stringArray = [];
 
   function rangeOf(input) {
     for(let i = 0; i <= input; i++) {
-      const number = i;
+      const number = i.toString();
       numberArray.push(number);
     }
   } 
 
+  
   function lookForOne(){
-    for(number of numberArray){
-      const numberString = number.toString();
-      stringArray.push(numberString);
-    }
-    stringArray.forEach(function(string){
-      const splitString = string.split("").toString();
-      if(splitString.substring(0, 1) === "1"){
-        let one = splitString.substring(0, 1);
-        one = "Beep!";
-        console.log(one)
+    numberArray.forEach(function(number){
+      const firstNumber = number[0];
+      if(firstNumber === '1'){
+        const replaced = number.replace(number, "Beep!");
+        console.log(replaced);
       }
     });
   }
-
-
+  
+  
+  
+  
+    //   numberArray.forEach(function(number){
+  //     const splitString = number.split(" ").join();
+  //     splitArray.push(splitString);
+  //   });
+  //   console.log(splitArray);
+  //   for(let i = 0; i <= stringArray; i++){
+  //     console.log(stringArray);
+  //     if(splitString.substring(0, 1) === "1"){
+  //       const replaced = splitString.replace(stringArray[i], "Beep!");
+  //       console.log(replaced);
+  //       console.log(stringArray);
+  //       console.log("you've reached if")
+  //     }
+  //   }
+  // }
+  // console.log(numberArray);
+  // console.log(stringArray);
 
 
 
@@ -38,7 +52,7 @@ $(document).ready(function(){
   $('form').submit(function(e){
     e.preventDefault();
 
-    const userInput = parseInt($('input#userNumber').val());
+    const userInput = $('input#userNumber').val();
 
     //User Logic
     function roboger(input){
