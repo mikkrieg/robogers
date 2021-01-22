@@ -10,26 +10,26 @@ $(document).ready(function(){
     }
   } 
 
-  function lookForFirst(){
-    numberArray.forEach(function(number){
-      const firstNumber = number[0];
-      const secondNumber = number[1];
-      if(firstNumber === '1' && secondNumber !== '2' || '3'){
-        const replaced = number.replace(number, "Beep!");
-        console.log(firstNumber === '1')
-      } else if(firstNumber === '2') {
-        const replaced = number.replace(number, "Boop!");
 
-      } else if(firstNumber === '3'){
-        const replaced = number.replace(number, "Won't you be my neighbor?");
-
+  function checkingArray(){
+    const newArray = numberArray.map(function(number){
+      if(number.includes('1')){
+        const checkedNumber = "Beep!";
+        return checkedNumber;
+      } else if(number.includes('2')){
+        const checkedNumber = "Boop!";
+        return checkedNumber;
+      } else if(number.includes('3')){
+        const checkedNumber = "Won't you be my neighbor?";
+        return checkedNumber;
+      } else {
+        return number;
       }
     });
+    return newArray;
   }
 
-
-
-
+  
 
 
   //User Interface Logic
@@ -41,7 +41,8 @@ $(document).ready(function(){
    
     function roboger(input){
       rangeOf(input);
-      lookForFirst();
+      let x = checkingArray();
+      console.log(x);
     }
     roboger(userInput)
     $("p#output-text").text();
