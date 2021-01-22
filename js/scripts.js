@@ -13,9 +13,10 @@ $(document).ready(function(){
   function lookForFirst(){
     numberArray.forEach(function(number){
       const firstNumber = number[0];
-      if(firstNumber === '1'){
+      const secondNumber = number[1];
+      if(firstNumber === '1' && secondNumber !== '2' || '3'){
         const replaced = number.replace(number, "Beep!");
-
+        console.log(firstNumber === '1')
       } else if(firstNumber === '2') {
         const replaced = number.replace(number, "Boop!");
 
