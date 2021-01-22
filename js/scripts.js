@@ -1,34 +1,33 @@
-$(document).ready(function(){
+// Business Logic
+const numberArray = [];
 
-  // Business Logic
-  const numberArray = [];
-
-  function rangeOf(input) {
-    for(let i = 0; i <= input; i++) {
-      const number = i.toString();
-      numberArray.push(number);
-    }
-  } 
-
-  function checkingArray(){
-    const newArray = numberArray.map(function(number){
-      if(number.includes('2')){
-        const checkedNumber = "Boop!";
-        return checkedNumber;
-      } else if(number.includes('1')){
-        const checkedNumber = "Beep!";
-        return checkedNumber; 
-      } else {
-        return number;
-      }
-    });
-    return newArray;
+function rangeOf(input) {
+  for(let i = 0; i <= input; i++) {
+    const number = i.toString();
+    numberArray.push(number);
   }
+} 
 
-  
+function checkingArray(){
+  const newArray = numberArray.map(function(number){
+  if(number.includes('3')){
+    const checkedNumber = "Won't you be my neighbor?";
+    return checkedNumber
+  } else if(number.includes('2')){
+    const checkedNumber = "Boop!";
+    return checkedNumber;
+  } else if(number.includes('1')){
+    const checkedNumber = "Beep!";
+    return checkedNumber; 
+  } else {
+    return number;
+  }
+  });
+  return newArray;
+}
 
-
-  //User Interface Logic
+//User Interface Logic
+$(document).ready(function(){
   $('form').submit(function(e){
     e.preventDefault();
 
@@ -37,10 +36,11 @@ $(document).ready(function(){
    
     function roboger(input){
       rangeOf(input);
-      let x = checkingArray();
-      console.log(x);
+      let output = checkingArray();
+      let joinedOutput = output.join(" ");
+      return joinedOutput;
     }
-    roboger(userInput)
+    const result = roboger(userInput)
     $("p#output-text").text();
     $('div#output').show();
   });
