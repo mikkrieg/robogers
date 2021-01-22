@@ -42,7 +42,7 @@ $(document).ready(function(){
     function roboger(input){
       rangeOf(input);
       let x = checkingArray();
-      console.log(x);
+      // console.log(x);
     }
     roboger(userInput)
     $("p#output-text").text();
