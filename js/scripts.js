@@ -10,18 +10,14 @@ $(document).ready(function(){
     }
   } 
 
-
   function checkingArray(){
     const newArray = numberArray.map(function(number){
-      if(number.includes('1')){
-        const checkedNumber = "Beep!";
-        return checkedNumber;
-      } else if(number.includes('2')){
+      if(number.includes('2')){
         const checkedNumber = "Boop!";
         return checkedNumber;
-      } else if(number.includes('3')){
-        const checkedNumber = "Won't you be my neighbor?";
-        return checkedNumber;
+      } else if(number.includes('1')){
+        const checkedNumber = "Beep!";
+        return checkedNumber; 
       } else {
         return number;
       }
@@ -42,7 +38,7 @@ $(document).ready(function(){
     function roboger(input){
       rangeOf(input);
       let x = checkingArray();
-      // console.log(x);
+      console.log(x);
     }
     roboger(userInput)
     $("p#output-text").text();
