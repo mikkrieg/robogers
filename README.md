@@ -15,25 +15,25 @@ A website created with HTML/CSS and Javascript where a user can input a number a
 <br/>
 **Test:** If a number is inputted, display the range of 0 to that number
 <br/>
-**Expect:** roboger(10).toEqual("0","1","2","3","4","5","6","7","8","9","10")
+**Expect:** roboger(5).toEqual("0", "1", "2", "3", "4", "5")
 
 **Describe:** roboger()
 <br/>
 **Test:** For numbers that include 1: replace all digits with "Beep!"
 <br/>
-**Expect:** roboger(1).toEqual("0", "Beep!")
+**Expect:** roboger(5).toEqual("0", "Beep!", "2", "3", "4", "5")
 
 **Describe:** roboger()
 <br/>
 **Test:** For numbers that include 2: replace all digits with "Boop!"
 <br/>
-**Expect:** roboger(2).toEqual("0", "Beep!", "Boop!");
+**Expect:** roboger(5).toEqual("0", "Beep!", "Boop!", "3", "4", "5");
 
 **Describe:** roboger()
 <br/>
 **Test:**For numbers that include 3: replace all digits with  "Won't you be my neighbor?"
 <br/>
-**Expect:** roboger(3).toEqual("0", "Beep!", "Boop!", "Won't you be my neighbor?")
+**Expect:** roboger(5).toEqual("0", "Beep!", "Boop!", "Won't you be my neighbor?",4,  5)
 
 
 
