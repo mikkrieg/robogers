@@ -13,7 +13,6 @@ function checkingArray(){
   let newArray = [];
   numberArray.forEach(function(number){
     if(newArray.length >= number){
-      console.log(newArray.length)
       newArray.pop();
     } else if(number.includes('3')){
       const checkedNumber = "Won't you be my neighbor?";
