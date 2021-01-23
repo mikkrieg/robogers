@@ -35,11 +35,9 @@ A website created with HTML/CSS and Javascript where a user can input a number a
 <br/>
 **Expect:** roboger(5).toEqual("0", "Beep!", "Boop!", "Won't you be my neighbor?",4,  5)
 
-
-
-
 ## Known Bugs
-* No known bugs at this time.
+* newArray continues growing with each click of the submit button
+* The output on the screen shows the growth and makes it difficult to read new number inputs
 
 ## Technologies Used
 * HTML
