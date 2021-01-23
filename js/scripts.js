@@ -13,8 +13,9 @@ function checkingArray(){
   let newArray = [];
   numberArray.forEach(function(number){
     if(newArray.length >= number){
-      console.log(newArray.length);
-    }else if(number.includes('3')){
+      console.log(newArray.length)
+      newArray.pop();
+    } else if(number.includes('3')){
       const checkedNumber = "Won't you be my neighbor?";
       newArray.push(checkedNumber);
     } else if(number.includes('2')){
@@ -42,10 +43,9 @@ $(document).ready(function(){
       const output = checkingArray();
       return output;
     }
-   
+
     const result = roboger(userInput);
-    console.log(result);
     $('div#output').show();
-    $('span#output-text').append("<p>" + result +  "</p>"); 
+    $('span#output-text').text(result); 
   });
 });
