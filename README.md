@@ -37,7 +37,7 @@ A website created with HTML/CSS and Javascript where a user can input a number a
 
 ## Known Bugs
 * Users can input multiple numbers to get a new result, but inputting a number that is 2x less than the previous will not work as expected.
-* Inputting the same number will remove values, inputting that number a third time will return them
+* Inputting the same number will remove values, inputting that number a third time will return them.
 
 ## Technologies Used
 * HTML
@@ -47,6 +47,11 @@ A website created with HTML/CSS and Javascript where a user can input a number a
 ### Libraries Used
 * Bootstrap
 * JQuery
+
+## Setup Instructions
+1. Clone this repository to your local machine
+2. Navigate to the top level directory of the cloned repo
+3. Open index.html in a browser
 
 ## Support and contact details
 
