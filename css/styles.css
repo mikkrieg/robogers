@@ -1,5 +1,13 @@
+body {
+  background-color:#f5f0f0; 
+}
+
 button {
   margin-left: 60%;
+}
+
+.jumbotron {
+  background-color:#E7DBDB
 }
 
 #output {
