@@ -12,7 +12,6 @@ function checkingArray(){
   let newArray = [];
   numberArray.forEach(function(number){
     if(newArray.length != number){
-      console.log(newArray.length != number);
       newArray = [];
     }
     if(number.includes('3')){
