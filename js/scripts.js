@@ -1,20 +1,21 @@
 // Business Logic
 let numberArray = [];
 
-
 function rangeOf(input) {
   for(let i = 0; i <= input; i++){
     const number = i.toString();
     numberArray.push(number);
   }
-} 
+}; 
 
 function checkingArray(){
   let newArray = [];
   numberArray.forEach(function(number){
-    if(newArray.length >= number){
-      newArray.pop();
-    } else if(number.includes('3')){
+    if(newArray.length != number){
+      console.log(newArray.length != number);
+      newArray = [];
+    }
+    if(number.includes('3')){
       const checkedNumber = "Won't you be my neighbor?";
       newArray.push(checkedNumber);
     } else if(number.includes('2')){
@@ -28,7 +29,7 @@ function checkingArray(){
     }
   });
   return newArray.join(' ')
-}
+};
 
 
 //User Interface Logic
@@ -36,12 +37,13 @@ $(document).ready(function(){
   $('form').submit(function(e){
     e.preventDefault();
     const userInput = $('input#userNumber').val();
+    $('input#userNumber').val("");
 
     function roboger(input){
       rangeOf(input);
       const output = checkingArray();
       return output;
-    }
+    };
 
     const result = roboger(userInput);
     $('div#output').show();

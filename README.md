@@ -36,9 +36,7 @@ A website created with HTML/CSS and Javascript where a user can input a number a
 **Expect:** roboger(5).toEqual("0", "Beep!", "Boop!", "Won't you be my neighbor?",4,  5)
 
 ## Known Bugs
-* Users can input multiple numbers to get a new result, but inputting a number that is 2x less than the previous will not work as expected.
-* Inputting the same number will remove values, inputting that number a third time will return them.
-* newArray[0] does not display in output
+* _No Known Bugs_
 
 ## Technologies Used
 * HTML
